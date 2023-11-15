@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    background-color: #F1F3F4;
+}
+.header{
+    height: 10vh;
+    width: 100%;
+}
+.card{
+    margin-top: 40px;
+    display: flex;
+    width: 55vw;
+    justify-content: space-between;
+}
+.content{
+    margin: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.imgCard{
+    height: 75vh;
+    display: inline-block;
+}
+img{
+    height: 100%;
+    border: 2px solid black;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.colors{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-wrap: wrap;
+    height: 110px;
+}
+.colorBtn{
+    height: 50px;
+    width: 50px;
+}
+.blue{
+    background-color: #807de8;
+}
+.black{
+    background-color: black;
+}
+
+.green{
+    background-color: #00FF00;
+}
+
+.lightblue{
+    background-color: #007de8;
+}
+
+.white{
+    background-color: #F1F3F4;
+}
+
+
+.addBtn{
+    background-color: lightblue;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.cart{
+    border: 1px solid black ;
+    padding: 20px;
+}
+button:hover{
+    cursor: pointer;
+}

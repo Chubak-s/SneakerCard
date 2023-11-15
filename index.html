@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sneaker Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container" id="app">
+    <div class="header" :style="{ background: headerBackground }"></div>
+    <div class="content">
+        <div class="card">
+            <div class="imgCard">
+                <img :src="photoSrc" alt="nike air max light blue">
+            </div>
+            <div class="information">
+                <h1>Nike Air Max Plus</h1>
+                Shipping: 0<br>
+                In Stock
+                <h3>Details</h3>
+                <ul>
+                    <li>Materials - textiles, polyurethane</li>
+                    <li>Season - demi-season/summer</li>
+                    <li>Gender - neutral</li>
+                </ul>
+                <h4>Colors:</h4>
+                <div class="colors">
+                    <button type="button" class="colorBtn black" @click="chooseColor('black')"></button>
+                    <button type="button" class="colorBtn blue" @click="chooseColor('blue')"></button>
+                    <button type="button" class="colorBtn green" @click="chooseColor('green')"></button>
+                    <button type="button" class="colorBtn lightblue" @click="chooseColor('lightblue')"></button>
+                    <button type="button" class="colorBtn white" @click="chooseColor('white')"></button>
+                </div>
+                <button type="button" @click="AddToCart" class="addBtn">Add to Cart</button>
+            </div>
+        </div>
+        <div>
+            <div class="cart">Cart: {{cart}}</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script src="app.js"></script>
+</body>
+</html>
